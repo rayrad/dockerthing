@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 2rem;
+        background: #f5f6f8;
+        color: #1f2933;
+      }
+      h1 {
+        margin-top: 0;
+      }
+      .layout {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        min-width: 200px;
+      }
+      li {
+        margin-bottom: 0.5rem;
+      }
+      .image-link {
+        width: 100%;
+        text-align: left;
+        padding: 0.6rem 0.9rem;
+        font-size: 1rem;
+        border: 1px solid #cbd2d9;
+        border-radius: 6px;
+        background: #fff;
+        cursor: pointer;
+        transition: background 0.15s ease, border-color 0.15s ease;
+      }
+      .image-link:hover {
+        background: #e8eef5;
+        border-color: #9aa5b1;
+      }
+      .stage {
+        flex: 1;
+        min-width: 280px;
+      }
+      #viewer {
+        display: none;
+        max-width: 100%;
+        border: 1px solid #cbd2d9;
+        border-radius: 8px;
+        background: #fff;
+      }
+      #caption {
+        font-weight: 600;
+      }
+      #status {
+        color: #b91c1c;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Image Gallery</h1>
+    <p>Pick a name to load its image from the service.</p>
+    <div class="layout">
+      <ul id="image-list"></ul>
+      <div class="stage">
+        <p id="caption"></p>
+        <img id="viewer" alt="" />
+        <p id="status"></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

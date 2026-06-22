@@ -1,0 +1,21 @@
+{
+  "name": "image-gallery-service",
+  "version": "1.0.0",
+  "description": "A small Node + TypeScript service that serves images by id, with a web app that lists named images and renders them on click.",
+  "scripts": {
+    "build:server": "tsc -p tsconfig.json",
+    "build:client": "tsc -p tsconfig.client.json",
+    "build": "npm run build:server && npm run build:client",
+    "start": "node dist/server.js",
+    "dev": "npm run build && npm run start"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}

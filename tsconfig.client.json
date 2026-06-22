@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "ES2015",
+    "moduleResolution": "Node",
+    "rootDir": "client",
+    "outDir": "public",
+    "strict": true,
+    "lib": ["ES2017", "DOM", "DOM.Iterable"],
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": ["client/**/*.ts"]
+}
